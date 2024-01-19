@@ -1,0 +1,106 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+  <div class="pt-5">
+    <a class="text-decoration-none" href="{% url 'barangay report behalf impact victim' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+</div>
+  
+     <!--tabs-->
+     <div class="pt-3">
+      <ul class="nav nav-tabs pt-2">
+        <li class="nav-item">
+          <a class="nav-link "  href="{% url 'barangay report behalf impact victim status' %}">Status</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'barangay report behalf impact contact person' %}">Contact</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'barangay report behalf impact victim victim' %}">Victim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'barangay report behalf impact victim perpetrator' %}">Perpetrator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'barangay report behalf impact victim incident' %}">Incident</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'barangay report behalf impact victim services' %}">Services</a>
+        </li>
+      </ul>
+    </div>
+      <!--end of tabs-->
+<div class="container pt-5">
+  <h1 class="pt-3 text-center">CONTACT PERSON INFORMATION</h1>
+
+    <div class="row pt-5">
+     <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+         <label for="firstname" class="form-label">First Name: </label>
+         <input type="text" class="form-control" id="firstname">
+       </div><!--end of col-->
+       <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+         <label for="firstname" class="form-label">Middle Name: </label>
+         <input type="text" class="form-control" id="firstname">
+       </div><!--end of col-->
+       <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+         <label for="firstname" class="form-label">Last Name: </label>
+         <input type="text" class="form-control" id="firstname">
+       </div><!--end of col-->
+       <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+             <label for="victim-Suffix" class="form-label">Suffix: </label>
+             <select id="victim-Suffix" class="form-select">
+               <option value="not-available">N/A</option>
+               <option value="sr">Sr</option>
+               <option value="jr">Jr</option>
+               <option value="ii">II</option>
+               <option value="iii">III</option>
+               <option value="iv">IV</option>
+             </select>
+       </div><!--end of col-->
+    </div><!--End of row-->
+
+    <div class="row pt-2">
+     <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+         <label for="firstname" class="form-label">Relationship to the Victim: </label>
+         <input type="text" class="form-control" id="firstname">
+       </div><!--end of col-->
+
+       <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+         <label for="firstname" class="form-label">Street: </label>
+         <input type="text" class="form-control" id="firstname">
+       </div><!--end of col-->
+       <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+         <label for="firstname" class="form-label">Barangay: </label>
+         <input type="text" class="form-control" id="firstname">
+       </div><!--end of col-->
+    </div><!--end of row-->
+
+    <div class="row pt-2 pb-3">
+     <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+         <label for="firstname" class="form-label">City: </label>
+         <input type="text" class="form-control" id="firstname">
+       </div><!--end of col-->
+       <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+         <label for="firstname" class="form-label">Contact No.: </label>
+         <input type="number" class="form-control" id="firstname">
+       </div><!--end of col-->
+       <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+         <label for="firstname" class="form-label">Telephone No.: </label>
+         <input type="text" class="form-control" id="firstname">
+       </div><!--end of col-->
+    </div><!--end of row-->
+</div><!--end of container-->
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end pt-3">
+    <button class="btn btn-primary" type="button">Save</button>
+  </div>
+
+</div><!--end of container-->
+
+
+{% endblock %}
+{% endblock content %}
