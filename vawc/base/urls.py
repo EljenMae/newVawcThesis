@@ -194,7 +194,7 @@ urlpatterns = [
 
     path('barangay/myprofile', views.myProfile, name="barangay my profile"),
     
-     
+    path('agency/dashboard', views.agencyDash, name="agency dashboard"),
     
 ]
 
