@@ -11,7 +11,7 @@ pip freeze > requirements.txt (all requirements to be install and should be upda
 python manage.py createsuperuser
 
 (admin panel)
-username: gray
-password: 12554680
+username: admin
+password: Password_565
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
