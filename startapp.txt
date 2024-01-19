@@ -1,5 +1,5 @@
 djangoenv/Scripts/activate
-cd vaw(unahin muna to)
+cd vawc(unahin muna to)
 python manage.py runserver(then ito)
 python manage.py makemigrations
 python manage.py migrate
