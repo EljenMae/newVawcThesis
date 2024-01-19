@@ -324,4 +324,9 @@ def myProfile(request):
 def settings(request):
     return render(request, 'vawc/barangay/barangay-settings.html')
 
+# admin side
+# dashboard
+def agencyDash(request):
+    return render(request, 'vawc/agency/dashboard.html')
+
 
