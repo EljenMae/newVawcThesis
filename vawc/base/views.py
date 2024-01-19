@@ -347,4 +347,8 @@ def agencyHealthcare(request):
 def agencyPolice(request):
     return render(request, 'vawc/agency/police.html')
 
+# profile
+def agencyProfile(request):
+    return render(request, 'vawc/agency/profile.html')
+
 

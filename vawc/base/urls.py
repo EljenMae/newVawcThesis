@@ -206,5 +206,7 @@ urlpatterns = [
     
     path('agency/agencies-Police', views.agencyPolice, name="agency Police"),
     
+    path('agency/agencies-profile', views.agencyProfile, name="agency profile"),
+    
 ]
 
