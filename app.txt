@@ -1,0 +1,17 @@
+djangoenv/Scripts/activate
+cd vaw(unahin muna to)
+python manage.py runserver(then ito)
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py startapp "name of model"
+pip freeze > requirements.txt (all requirements to be install and should be update)
+
+(Creating a admin)
+python manage.py createsuperuser
+
+(admin panel)
+username: gray
+password: 12554680
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
