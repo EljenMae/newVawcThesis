@@ -1,21 +1,38 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   <!-- Required meta tags -->
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-   <title>Breeze Admin</title>
-   <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css" />
-   <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css" />
-   <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
-   <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
-   <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" />
-   <link rel="stylesheet" href="assets/css/style.css" />
-   <link rel="shortcut icon" href="assets/images/favicon.png" />
-  
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv= ='X-UA-Compatible' content= 'IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Admin</title>
 
+     <!-- Favicon-->
+     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+     <!-- Bootstrap CSS-->
+     <link rel= "stylesheet" type= "text/css" href= "https://bootswatch.com/5/pulse/bootstrap.min.css">
+
+     <!-- Bootstrap icons-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+
+    <!-- bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+     <!-- Bootstrap CSS-->
+    <link rel= "stylesheet" type= "text/css" href= "https://bootswatch.com/5/pulse/bootstrap.min.css">
+
+     <!-- boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+     <!-- data tables-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+
+    <!-- data tables-->
+     <link rel="stylesheet" href="{% static 'css/styles.min.css' %}" />
+     <link rel= "stylesheet" type= "text/css" href= "{% static 'css/styles.css' %}">
+                
+</head>
 <body>
 
     {% include 'agency/agency-navbar.html' %}
@@ -25,30 +42,41 @@
     {% endblock %}
 
 
+
+
+
+
 </body>
 
- <!-- plugins:js -->
- <script src="assets/vendors/js/vendor.bundle.base.js"></script>
- <!-- endinject -->
- <!-- Plugin js for this page -->
- <script src="assets/vendors/chart.js/Chart.min.js"></script>
- <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
- <script src="assets/vendors/flot/jquery.flot.js"></script>
- <script src="assets/vendors/flot/jquery.flot.resize.js"></script>
- <script src="assets/vendors/flot/jquery.flot.categories.js"></script>
- <script src="assets/vendors/flot/jquery.flot.fillbetween.js"></script>
- <script src="assets/vendors/flot/jquery.flot.stack.js"></script>
- <script src="assets/vendors/flot/jquery.flot.pie.js"></script>
- <!-- End plugin js for this page -->
- <!-- inject:js -->
- <script src="assets/js/off-canvas.js"></script>
- <script src="assets/js/hoverable-collapse.js"></script>
- <script src="assets/js/misc.js"></script>
- <!-- endinject -->
- <!-- Custom js for this page -->
- <script src="assets/js/dashboard.js"></script>
- <!-- End custom js for this page -->
+<!-- Data Tables-->
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
 
+<!-- Bootstrap core JS-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+ <!-- Jquery-->
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+
+ <!-- Core theme JS-->
+ <script src="{% static 'js/sidebarmenu.js' %}"></script>
+ <script src="{% static 'js/app.js' %}"></script>
+
+ <!-- bootstrap JS-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+ <!-- Core theme JS-->
+  <script src="{% static 'js/app.js' %}"></script>
+  <!-- Jquery-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  
+ <!-- Bootstrap popper-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
  
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+ <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript"></script>
  
 </html>
