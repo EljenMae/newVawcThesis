@@ -196,5 +196,15 @@ urlpatterns = [
     
     path('agency/dashboard', views.agencyDash, name="agency dashboard"),
     
+    path('agency/graph-report', views.agencyGraphReport, name="agency graph report"),
+    
+    path('agency/agencies', views.agencyAgencies, name="agency agencies"),
+    
+    path('agency/agencies-barangay', views.agencybarangay, name="agency barangay"),
+    
+    path('agency/agencies-healthCare', views.agencyHealthcare, name="agency healthcare"),
+    
+    path('agency/agencies-Police', views.agencyPolice, name="agency Police"),
+    
 ]
 
