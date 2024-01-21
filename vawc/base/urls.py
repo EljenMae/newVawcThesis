@@ -198,6 +198,8 @@ urlpatterns = [
     
     path('agency/graph-report', views.agencyGraphReport, name="agency graph report"),
     
+    path('agency/graph-report/details', views.agencyGraphReportDetails, name="agency graph report details"),
+    
     path('agency/agencies', views.agencyAgencies, name="agency agencies"),
     
     path('agency/agencies-barangay', views.agencybarangay, name="agency barangay"),

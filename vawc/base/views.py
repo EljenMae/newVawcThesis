@@ -333,6 +333,9 @@ def agencyDash(request):
 def agencyGraphReport(request):
     return render(request, 'vawc/agency/graphReport.html')
 
+def agencyGraphReportDetails(request):
+    return render(request, 'vawc/agency/graphReport-details.html')
+
 
 # agencies
 def agencyAgencies(request):
