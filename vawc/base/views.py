@@ -336,6 +336,9 @@ def agencyGraphReport(request):
 def agencyGraphReportDetails(request):
     return render(request, 'vawc/agency/graphReport-details.html')
 
+def agencyGraphReportIndividual(request):
+    return render(request, 'vawc/agency/graphReport-individual.html')
+
 
 # agencies
 def agencyAgencies(request):
