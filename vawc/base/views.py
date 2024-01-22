@@ -356,8 +356,14 @@ def agencybarangayIndividualReport(request):
 def agencyHealthcare(request):
     return render(request, 'vawc/agency/healthcare.html')
 
+def agencyHealthcareDetails(request):
+    return render(request, 'vawc/agency/healthcare-details.html')
+
 def agencyPolice(request):
     return render(request, 'vawc/agency/police.html')
+
+def agencyPoliceDetails(request):
+    return render(request, 'vawc/agency/police-details.html')
 
 # profile
 def agencyProfile(request):
