@@ -198,6 +198,12 @@ urlpatterns = [
     
     path('agency/graph-report', views.agencyGraphReport, name="agency graph report"),
     
+    path('agency/graph-report/details', views.agencyGraphReportDetails, name="agency graph report details"),
+    
+    path('agency/graph-report/report-individual', views.agencyGraphReportIndividual, name="agency graph report individual"),
+     
+    path('agency/graph-report/add-report', views.agencyGraphReportAddMonthlyReport, name="agency graph report add report"),
+    
     path('agency/agencies', views.agencyAgencies, name="agency agencies"),
     
     path('agency/agencies-barangay', views.agencybarangay, name="agency barangay"),
@@ -205,6 +211,8 @@ urlpatterns = [
     path('agency/agencies-healthCare', views.agencyHealthcare, name="agency healthcare"),
     
     path('agency/agencies-Police', views.agencyPolice, name="agency Police"),
+    
+    path('agency/agencies-profile', views.agencyProfile, name="agency profile"),
     
 ]
 

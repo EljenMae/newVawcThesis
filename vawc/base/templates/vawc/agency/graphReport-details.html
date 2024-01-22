@@ -1,0 +1,40 @@
+{% extends "agency/agency-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+    <div class="pt-5">
+        <a class="text-decoration-none" href="{% url 'agency graph report' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+    </div>
+
+    <div class="row pt-4">
+        <div class="col-lg-10 col-md-2 col-sm-8">
+            <h1>UPDATED</h1>
+        </div><!--end of col-->
+        <div class="col-lg-2 col-md-2 col-sm-8">
+            <a class="btn btn-primary" href="{% url 'agency graph report add report' %}" role="button">Add Monthly Report</a>
+        </div><!--end of col-->
+    </div><!--end of row-->
+
+    
+
+    <div class="pt-3">
+            <div class="list-group">
+            <a href="{% url 'agency graph report individual' %}" class="list-group-item list-group-item-action">Cabatangan</a>
+            <a href="#" class="list-group-item list-group-item-action">Sta. Maria</a>
+            <a href="#" class="list-group-item list-group-item-action">Pasonanca</a>
+            <a href="#" class="list-group-item list-group-item-action">Baliwasan</a>
+          </div>
+    </div>
+    
+
+</div><!--end of container-->
+
+
+
+
+{% endblock %}
+{% endblock content %}
