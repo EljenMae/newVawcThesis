@@ -200,7 +200,9 @@ urlpatterns = [
     
     path('agency/graph-report/details', views.agencyGraphReportDetails, name="agency graph report details"),
     
-     path('agency/graph-report/report-individual', views.agencyGraphReportIndividual, name="agency graph report individual"),
+    path('agency/graph-report/report-individual', views.agencyGraphReportIndividual, name="agency graph report individual"),
+     
+    path('agency/graph-report/add-report', views.agencyGraphReportAddMonthlyReport, name="agency graph report add report"),
     
     path('agency/agencies', views.agencyAgencies, name="agency agencies"),
     

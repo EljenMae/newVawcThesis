@@ -339,6 +339,9 @@ def agencyGraphReportDetails(request):
 def agencyGraphReportIndividual(request):
     return render(request, 'vawc/agency/graphReport-individual.html')
 
+def agencyGraphReportAddMonthlyReport(request):
+    return render(request, 'vawc/agency/graphReport-addMonthly-Report.html')
+
 
 # agencies
 def agencyAgencies(request):
