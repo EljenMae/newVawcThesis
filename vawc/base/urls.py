@@ -212,7 +212,11 @@ urlpatterns = [
     
     path('agency/agencies-healthCare', views.agencyHealthcare, name="agency healthcare"),
     
+     path('agency/agencies-healthCare/details', views.agencyHealthcareDetails, name="agency healthcare details"),
+    
     path('agency/agencies-Police', views.agencyPolice, name="agency Police"),
+    
+    path('agency/agencies-Police/details', views.agencyPoliceDetails, name="agency police details"),
     
     path('agency/agencies-profile', views.agencyProfile, name="agency profile"),
     
