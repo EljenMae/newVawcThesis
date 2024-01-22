@@ -204,9 +204,9 @@ urlpatterns = [
      
     path('agency/graph-report/add-report', views.agencyGraphReportAddMonthlyReport, name="agency graph report add report"),
     
-    path('agency/agencies', views.agencyAgencies, name="agency agencies"),
-    
     path('agency/agencies-barangay', views.agencybarangay, name="agency barangay"),
+    
+    path('agency/agencies-barangay/individual', views.agencybarangayIndividual, name="agency barangay individual"),
     
     path('agency/agencies-healthCare', views.agencyHealthcare, name="agency healthcare"),
     
