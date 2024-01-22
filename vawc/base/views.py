@@ -350,6 +350,9 @@ def agencybarangay(request):
 def agencybarangayIndividual(request):
     return render(request, 'vawc/agency/barangay-individual.html')
 
+def agencybarangayIndividualReport(request):
+    return render(request, 'vawc/agency/barangay-individual-report.html')
+
 def agencyHealthcare(request):
     return render(request, 'vawc/agency/healthcare.html')
 

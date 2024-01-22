@@ -208,6 +208,8 @@ urlpatterns = [
     
     path('agency/agencies-barangay/individual', views.agencybarangayIndividual, name="agency barangay individual"),
     
+    path('agency/agencies-barangay/individual/report', views.agencybarangayIndividualReport, name="agency barangay individual report"),
+    
     path('agency/agencies-healthCare', views.agencyHealthcare, name="agency healthcare"),
     
     path('agency/agencies-Police', views.agencyPolice, name="agency Police"),
