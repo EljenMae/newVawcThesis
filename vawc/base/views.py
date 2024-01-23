@@ -344,17 +344,26 @@ def agencyGraphReportAddMonthlyReport(request):
 
 
 # agencies
-def agencyAgencies(request):
-    return render(request, 'vawc/agency/agencies.html')
-
 def agencybarangay(request):
     return render(request, 'vawc/agency/barangay.html')
+
+def agencybarangayIndividual(request):
+    return render(request, 'vawc/agency/barangay-individual.html')
+
+def agencybarangayIndividualReport(request):
+    return render(request, 'vawc/agency/barangay-individual-report.html')
 
 def agencyHealthcare(request):
     return render(request, 'vawc/agency/healthcare.html')
 
+def agencyHealthcareDetails(request):
+    return render(request, 'vawc/agency/healthcare-details.html')
+
 def agencyPolice(request):
     return render(request, 'vawc/agency/police.html')
+
+def agencyPoliceDetails(request):
+    return render(request, 'vawc/agency/police-details.html')
 
 # profile
 def agencyProfile(request):

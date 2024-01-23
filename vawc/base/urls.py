@@ -204,13 +204,19 @@ urlpatterns = [
      
     path('agency/graph-report/add-report', views.agencyGraphReportAddMonthlyReport, name="agency graph report add report"),
     
-    path('agency/agencies', views.agencyAgencies, name="agency agencies"),
-    
     path('agency/agencies-barangay', views.agencybarangay, name="agency barangay"),
+    
+    path('agency/agencies-barangay/individual', views.agencybarangayIndividual, name="agency barangay individual"),
+    
+    path('agency/agencies-barangay/individual/report', views.agencybarangayIndividualReport, name="agency barangay individual report"),
     
     path('agency/agencies-healthCare', views.agencyHealthcare, name="agency healthcare"),
     
+     path('agency/agencies-healthCare/details', views.agencyHealthcareDetails, name="agency healthcare details"),
+    
     path('agency/agencies-Police', views.agencyPolice, name="agency Police"),
+    
+    path('agency/agencies-Police/details', views.agencyPoliceDetails, name="agency police details"),
     
     path('agency/agencies-profile', views.agencyProfile, name="agency profile"),
     
