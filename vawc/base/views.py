@@ -197,8 +197,8 @@ def servicesBpoRefView(request):
 
 # end of services 
 
-# records
-def victim(request):
+# records victim adult
+def victimAdult(request):
     return render(request, 'vawc/barangay/barangay-victim.html')
 
 def victimStatus(request):
@@ -222,8 +222,62 @@ def victimAddRef(request):
 def victimRefView(request):
     return render(request, 'vawc/barangay/barangay-victim-ref-view.html')
 
-def perpetrator(request):
+# records victim child
+def victimChild(request):
+    return render(request, 'vawc/barangay/barangay-victim-child.html')
+
+def victimChildStatus(request):
+    return render(request, 'vawc/barangay/barangay-victim-child-status.html')
+
+def victimVictim(request):
+    return render(request, 'vawc/barangay/barangay-victim-victim.html')
+
+def victimPerpetrator(request):
+    return render(request, 'vawc/barangay/barangay-victim-perpetrator.html')
+
+def victimIncident(request):
+    return render(request, 'vawc/barangay/barangay-victim-incident.html')
+
+def victimServices(request):
+    return render(request, 'vawc/barangay/barangay-victim-services.html')
+
+def victimAddRef(request):
+    return render(request, 'vawc/barangay/barangay-victim-add-ref.html')
+
+def victimRefView(request):
+    return render(request, 'vawc/barangay/barangay-victim-ref-view.html')
+
+
+
+# record perpetrator adult
+def perpetratorAdult(request):
     return render(request, 'vawc/barangay/barangay-perpetrator.html')
+
+def perpetratorStatus(request):
+    return render(request, 'vawc/barangay/barangay-perpetrator-status.html')
+
+def perpetratorVictim(request):
+    return render(request, 'vawc/barangay/barangay-perpetrator-victim.html')
+
+def perpetratorPerpetrator(request):
+    return render(request, 'vawc/barangay/barangay-perpetrator-perpetrator.html')
+
+def perpetratorIncident(request):
+    return render(request, 'vawc/barangay/barangay-perpetrator-incident.html')
+
+def perpetratorServices(request):
+    return render(request, 'vawc/barangay/barangay-perpetrator-services.html')
+
+def perpetratorAddRef(request):
+    return render(request, 'vawc/barangay/barangay-perpetrator-addRef.html')
+
+def perpetratorRefView(request):
+    return render(request, 'vawc/barangay/barangay-perpetrator-ref-view.html')
+# end records
+
+# record perpetrator child
+def perpetratorChild(request):
+    return render(request, 'vawc/barangay/barangay-perpetrator-child.html')
 
 def perpetratorStatus(request):
     return render(request, 'vawc/barangay/barangay-perpetrator-status.html')
@@ -346,6 +400,12 @@ def agencyGraphReportAddMonthlyReport(request):
 # agencies
 def agencybarangay(request):
     return render(request, 'vawc/agency/barangay.html')
+
+def agencybarangayDistrict1(request):
+    return render(request, 'vawc/agency/barangay-district1.html')
+
+def agencybarangayDistrict2(request):
+    return render(request, 'vawc/agency/barangay-district2.html')
 
 def agencybarangayIndividual(request):
     return render(request, 'vawc/agency/barangay-individual.html')

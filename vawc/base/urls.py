@@ -119,8 +119,9 @@ urlpatterns = [
     path('barangay/bpo-add-ref', views.servicesBpoAddRef, name="barangay bpo add ref"),
     
      path('barangay/bpo-ref-vew', views.servicesBpoRefView, name="barangay bpo ref view"),
+     
     
-    path('barangay/victim', views.victim, name="barangay victim"),
+    path('barangay/victim/adult', views.victimAdult, name="barangay victim adult"),
     
     path('barangay/victim-status', views.victimStatus, name="barangay victim status"),
     
@@ -136,7 +137,14 @@ urlpatterns = [
     
     path('barangay/victim-ref', views.  victimRefView, name="barangay victim view ref"),
     
-    path('barangay/perpetrator', views.perpetrator, name="barangay perpetrator"),
+    path('barangay/victim/child', views.victimChild, name="barangay victim child"),
+    
+    path('barangay/victimstatus', views.victimChildStatus, name="barangay victim child status"),
+    
+    
+    
+    
+    path('barangay/perpetrator/adult', views.perpetratorAdult, name="barangay perpetrator adult"),
     
     path('barangay/perpetrator-status', views.perpetratorStatus, name="barangay perpetrator status"),
     
@@ -151,6 +159,10 @@ urlpatterns = [
     path('barangay/perpetrator-addRef', views.perpetratorAddRef, name="barangay perpetrator add ref"),
     
     path('barangay/perpetrator-ref-view', views.perpetratorRefView, name="barangay perpetrator ref view"),
+    
+     path('barangay/perpetrator/child', views.perpetratorChild, name="barangay perpetrator child"),
+    
+    
     
     path('barangay/open-cases', views.openCases, name="barangay open cases"),
     
@@ -205,6 +217,10 @@ urlpatterns = [
     path('agency/graph-report/add-report', views.agencyGraphReportAddMonthlyReport, name="agency graph report add report"),
     
     path('agency/agencies-barangay', views.agencybarangay, name="agency barangay"),
+    
+     path('agency/agencies/barangay/district-1', views.agencybarangayDistrict1, name="agency barangay district 1"),
+     
+      path('agency/agencies/barangay/district-2', views.agencybarangayDistrict2, name="agency barangay district 2"),
     
     path('agency/agencies-barangay/individual', views.agencybarangayIndividual, name="agency barangay individual"),
     
