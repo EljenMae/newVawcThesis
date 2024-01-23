@@ -15,6 +15,21 @@
             </div><!--end of col-->
         </div><!--end of row-->
 
+        <div class="pt-3">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'agency barangay' %}">All</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'agency barangay district 1' %}">District 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'agency barangay district 2' %}">District 2</a>
+              </li>
+            </ul>
+      </div><!--end of padding top-->
+  
+
     <div class="pt-3">
         <div class="list-group">
             <a href="{% url 'agency barangay individual' %}" class="list-group-item list-group-item-action">Cabatangan</a>
@@ -27,41 +42,83 @@
 
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Adding Barangay</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="col-lg-12 col-md-12 col-sm-8">
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Name of Barangay</label>
-              </div><!--end of button-->
-          </div><!--end of col-->
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Adding Barangay</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="col-lg-12 col-md-12 col-sm-8">
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Name of Barangay</label>
+            </div><!--end of button-->
+        </div><!--end of col-->
          
-          <div class="col-lg-12 col-md-12 col-sm-8">
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Address</label>
-              </div><!--end of button-->
-          </div><!--end of col-->
+        <div class="col-lg-12 col-md-12 col-sm-8">
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Address of Barangay Hall</label>
+            </div><!--end of button-->
+        </div><!--end of col-->
 
-          <div class="col-lg-12 col-md-12 col-sm-8">
+        <div class="col-lg-12 col-md-12 col-sm-8">
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Contact Person</label>
+            </div><!--end of button-->
+        </div><!--end of col-->
+
+        <div class="col-lg-12 col-md-12 col-sm-8">
+          <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Contact Number</label>
+            </div><!--end of button-->
+        </div><!--end of col-->
+
+        <div class="col-lg-12 col-md-12 col-sm-8 pb-3">
+          <button type="button" class="btn btn-secondary w-100">+</button>
+        </div><!--end of col-->
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-8 ">
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Contact Number</label>
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">District</label>
               </div><!--end of button-->
           </div><!--end of col-->
-        </div><!--end of modal body-->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save</button>
-        </div>
+          <div class="col-lg-6 col-md-6 col-sm-8 ">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Region</label>
+              </div><!--end of button-->
+          </div><!--end of col-->
+        </div><!--end of row-->
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-8 ">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">City</label>
+              </div><!--end of button-->
+          </div><!--end of col-->
+          <div class="col-lg-6 col-md-6 col-sm-8 ">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Province</label>
+              </div><!--end of button-->
+          </div><!--end of col-->
+        </div><!--end of row-->
+      </div><!--end of modal body-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
       </div>
     </div>
   </div>
+</div>
+
 
 
 
