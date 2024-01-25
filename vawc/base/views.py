@@ -371,10 +371,6 @@ def feedbackFormView(request):
 # end of report and feedback.
 
 # user settings.
-def myProfile(request):
-    return render(request, 'vawc/barangay/barangay-myprofile.html')
-
-
 def settings(request):
     return render(request, 'vawc/barangay/barangay-settings.html')
 
