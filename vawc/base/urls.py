@@ -162,6 +162,8 @@ urlpatterns = [
     
      path('barangay/perpetrator/child', views.perpetratorChild, name="barangay perpetrator child"),
     
+    
+    
     path('barangay/open-cases', views.openCases, name="barangay open cases"),
     
     path('barangay/open-status-view', views.openViewStatus, name="barangay open view status"),
@@ -202,9 +204,7 @@ urlpatterns = [
     
     path('barangay/monthly-feedback-form-view', views.feedbackFormView, name="barangay feedback form view"),
 
-     path('barangay/settings', views.settings, name="barangay settings"),
-    
-    
+    path('barangay/myprofile', views.myProfile, name="barangay my profile"),
     
     path('agency/dashboard', views.agencyDash, name="agency dashboard"),
     

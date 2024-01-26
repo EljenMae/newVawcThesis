@@ -43,7 +43,7 @@
                 <option value="iii">III</option>
                 <option value="iv">IV</option>
             </select>
-            </div><!--end of col-->
+            </div>
         </div><!--End of First row-->
 
         <div class="row pt-3"><!--Start of second row-->
@@ -57,124 +57,59 @@
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
-                <label for="victim-age" class="form-label">Date of Birth: </label>
-                <input type="date" class="form-control" id="victim-age">
-            </div><!--end of col-->
-
-            <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
-              <label for="contact-number" class="form-label">Contact Number:</label>
-              <input type="tel" class="form-control" id="contact-number" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" value="09">
+                <label for="victim-age" class="form-label">Age: </label>
+                <input type="number" class="form-control" id="victim-age">
             </div>
-      
+
+              <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+                <label for="victim-civilstatus" class="form-label">Civil Status: </label>
+                  <select id="victim-civilstatus" class="form-select">
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="live-in">Live-In</option>
+                    <option value="widowed">Widowed</option>
+                    <option value="separated">Separated</option>
+                  </select>
+              </div>
 
             </div><!--End of row-->
 
             <div class="row pt-3 pb-3"><!--Start of third row-->
+
+              <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+                <label for="victim-nationality" class="form-label">Nationality: </label>
+                <input type="text" class="form-control" id="victim-nationality" value="Filipino">
+              </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+                  <label for="contact-number" class="form-label">Contact Number:</label>
+                  <input type="tel" class="form-control" id="contact-number" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" value="09">
+                </div>
+
                 <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
                   <label for="tel-number" class="form-label">Telephone Number:</label>
                   <input type="tel" class="form-control" id="tel-number" pattern="[0-9]{3}-[0-9]{4}" value="(062)">
-                </div><!--end of col-->
-                <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
-                  <label for="victim-housenum" class="form-label">Unit no./House no./Building name:</label>
-                  <input type="text" class="form-control" id="victim-street">
-                </div><!--end of col-->
-                <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
-                  <label for="victim-street" class="form-label">Street/Zone: </label>
-                  <input type="text" class="form-control" id="victim-street">
-                </div><!--end of col-->
+                </div>
               </div><!--End of row-->
-            <div class="row pt-3 pb-3"><!--Start of fifth row-->
-              <div class="col-lg-4 col-md-4 col-sm-8 pb-2"> <!--suffix-->
-                <label for="victim-barangay" class="form-label">Barangay: </label>
-                <select id="victim-barangay" class="form-select">
-                  <option value="arena-blanco">Arena Blanco</option>
-                  <option value="ayala">Ayala</option>
-                  <option value="baliwasan">Baliwasan</option>
-                  <option value="baluno">Baluno</option>
-                  <option value="Barangay-zone-I">Barangay Zone I</option>
-                  <option value="Barangay-zone-II">Barangay Zone II</option>
-                  <option value="Barangay-zone-III">Barangay Zone III</option>
-                  <option value="Barangay-zone-IV">Barangay Zone IV</option>  
-                  <option value="boalan">Boalan</option>
-                  <option value="bolong">Bolong</option>
-                  <option value="buenavista">Buenavista</option>
-                  <option value="bunguiao">Bunguiao</option>
-                  <option value="busay">Busay</option>
-                  <option value="cabaluay">Cabaluay</option>
-                  <option value="cabatangan">Cabatangan</option>
-                  <option value="cacao">Cacao</option>
-                  <option value="calabasa">Calabasa</option>
-                  <option value="calarian">Calarian</option>
-                  <option value="camino-nuevo">Camino Nuevo</option>
-                  <option value="campo-islam">Campo Islam</option>
-                  <option value="canelar">Canelar</option>
-                  <option value="capisan">Capisan</option>
-                  <option value="cawit">Cawit</option>
-                  <option value="culianan">Culianan</option>
-                  <option value="curuan">Curuan</option>
-                  <option value="dita">Dita</option>
-                  <option value="divisoria">Divisoria</option>
-                  <option value="duian-UB">Dulian (Upper Bunguiao)</option>
-                  <option value="dulian-UP">Dulian (Upper Pasonanca)</option>
-                  <option value="guisao">Guisao</option>
-                  <option value="guiwan">Guiwan</option>
-                  <option value="kansanyangan">Kansanyangan</option>
-                  <option value="labuan">Labuan</option>
-                  <option value="lamisahan">Lamisahan</option>
-                  <option value="landang-gua">Landang Gua</option>
-                  <option value="landang-laum">Landang Laum</option>
-                  <option value="lanzones">Lanzones</option>
-                  <option value="lapakan">Lapakan</option>
-                  <option value="la-paz">La Paz</option>
-                  <option value="latuan-curuan">Latuan (Curuan)</option>
-                  <option value="licomo">Licomo</option>
-                  <option value="limaong">Limaong</option>
-                  <option value="limpapa">Limpapa</option>
-                  <option value="lumayang">Lumayang</option>
-                  <option value="lumbangan">Lumbangan</option>
-                  <option value="lunzuran">Lunzuran</option>
-                  <option value="maasin">Maasin</option>
-                  <option value="malagutay">Malagutay</option>
-                  <option value="mampang">Mampang</option>
-                  <option value="manalipa">Manalipa</option>
-                  <option value="mangusu">Mangusu</option>
-                  <option value="manicahan">Manicahan</option>
-                  <option value="mariki">Mariki</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="Muti">Muti</option>
-                  <option value="pamucutan">Pamucutan</option>
-                  <option value="pangapuyan">Pangapuyan</option>
-                  <option value="panubigan">Panubigan</option>
-                  <option value="pasilmanta">Pasilmanta</option>
-                  <option value="pasobolong">Pasobolong</option>
-                  <option value="pasonanca">Pasonanca</option>
-                  <option value="patalon">Patalon</option>
-                  <option value="putik">Putik</option>
-                  <option value="quiniput">Quiniput</option>
-                  <option value="recodo">Recordo</option>
-                  <option value="rio hondo">Rio Hondo</option>
-                  <option value="salaan">Salaan</option>
-                  <option value="sangali">Sangali</option>
-                  <option value="san-jose-cawa-cawa">San Jose Cawa-Cawa</option>
-                  <option value="san-jose-gusu">San Jose Gusu</option>
-                  <option value="san-roque">San Roque</option>
-                  <option value="santa-barbara">Santa Barbara</option>
-                  <option value="santa-catalina">Santa Catalina</option>
-                  <option value="santa-maria">Santa Maria</option>
-                  <option value="santa-niño">Santa Niño</option>
-                  <option value="sibulao">Sibulao</option>
-                  <option value="sinubung">Sinubung</option>
-                  <option value="sinunoc">Sinunoc</option>
-                  <option value="tagasilay">Tagasilay</option>
-                  <option value="taguiti">Taguiti</option>
-                  <option value="tilabaan ">Talabaan</option>
-                  <option value="talisayan">Talisayan</option>
-                  <option value="talon-talon">Talon-talon</option>
-                  <option value="taaluksangay">Taliksangay</option>
 
-
-              </select>
+            <div class="row pb-3"><!--Start of fourth row-->
+              <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+                <label for="victim-housenum" class="form-label">Unit no./House no./Building name:</label>
+                <input type="text" class="form-control" id="victim-street">
               </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+                <label for="victim-street" class="form-label">Street: </label>
+                <input type="text" class="form-control" id="victim-street">
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-8">
+                <label for="victim-barangay" class="form-label">Barangay: </label>
+                <input type="text" class="form-control" id="victim-barangay">
+              </div><!--End of col-->
+            </div><!--end of row-->
+
+            <div class="row pt-3 pb-3"><!--Start of fifth row-->
               <div class="col-lg-4 col-md-4 col-sm-8">
                 <label for="victim-province" class="form-label">Province: </label>
                 <input type="text" class="form-control" id="victim-province" value="Zamboanga Del Sur">
@@ -183,6 +118,28 @@
                 <label for="victim-city" class="form-label">City / Mun: </label>
                 <input type="text" class="form-control" id="victim-city" value="Zamboanga City">
               </div><!--emd of col-->
+              <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+                <label for="victim-region" class="form-label">Region: </label>
+                  <select id="victim-region" class="form-select">
+                    <option value="region-I">Region I – Ilocos Region</option>
+                    <option value="region-II">Region II – Cagayan Valley</option>
+                    <option value="region-III">Region III – Central Luzon</option>
+                    <option value="region-IV">Region IV‑A – CALABARZON</option>
+                    <option value="mimaropa">MIMAROPA Region</option>
+                    <option value="region-V">Region V – Bicol Region</option>
+                    <option value="region-VI">Region VI – Western Visayas</option>
+                    <option value="region-VII">Region VII – Central Visayas</option>
+                    <option value="region-VIII">Region VIII – Eastern Visayas</option>
+                    <option value="region-IX" selected>Region IX – Zamboanga Peninsula</option>
+                    <option value="region-X">Region X – Northern Mindanao</option>
+                    <option value="region-XI">Region XI – Davao Region</option>
+                    <option value="region-XII">Region XII – SOCCSKSARGEN</option>
+                    <option value="region-XIII">Region XIII – Caraga</option>
+                    <option value="ncr">NCR – National Capital Region</option>
+                    <option value="car">CAR – Cordillera Administrative Region</option>
+                    <option value="barmm">BARMM – Bangsamoro Autonomous Region in Muslim Mindanao</option>
+                </select>
+              </div><!--end of row-->
             </div><!--end of row-->
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-5">
