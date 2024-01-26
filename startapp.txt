@@ -1,4 +1,4 @@
-djangoenv/Scripts/activate
+newdjangoenv/Scripts/activate (ito na bago)
 cd vawc(unahin muna to)
 python manage.py runserver(then ito)
 python manage.py makemigrations
