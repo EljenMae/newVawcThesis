@@ -34,7 +34,7 @@
 
       <div class="row justify-content-end">
         <div class="col-lg-10 col-md-10 col-sm-8">
-            <h1 class="pt-5">VERI</h1>
+            <h1 class="pt-5">STATUS</h1>
         </div><!--end of col-->
         <div class="col-lg-2 col-md-2 col-sm-8 pt-5">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-plus"></i> Add Status</button>
@@ -47,11 +47,28 @@
             This is some text within a card body.
           </div>
         </div>
-      </div>
+      </div><!--end of status box-->
+
+      <div class="container pt-3 pb-3">
+        <div class="row">
+          <div class="col-lg-11 col-md-11 col-sm-8">
+            <h3>Warrantless Arrest</h3>
+          </div><!--end of col-->
+          <div class="col-lg-1 col-md-1 col-sm-8">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#warrantlessArrest">
+              Send
+            </button>
+          </div><!--end of col-->
+        </div><!--end of row-->
+        
+
+
+      </div><!--end of container-->
 
       <div class="container pt-3">
         <h3><strong>CASES:</strong></h3>
-      <div class="row pt-5">
+      <div class="row pt-3">
         <div class="col-lg-6 col-md-6 col-sm-8">
           <h5>CLOSE</h5>
         </div><!--end of col-->
@@ -62,9 +79,9 @@
         <div class="pt-2">
           <a class="btn btn-primary" href="#" role="button">ACTIVE CASE</a>
         </div>
-       
       </div><!--end of container-->
- 
+
+
 </div><!--end of container-->
 
 <!-- Modal -->
@@ -76,11 +93,51 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Status</label>
+        </div><!--end of status-->
+        <div class="form-floating mb-3">
+          <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Date</label>
+        </div><!--end of status-->
+        
+      </div><!--end of body-->
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+        <button type="button" class="btn btn-primary">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="warrantlessArrest" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="warrantlessArrestLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="warrantlessArrestLabel">Warrantless Arrest Confirmation</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center fs-4">
+          Are you sure you want to send a warrantless report? This cannot be undone.
+        </div>
+      </div><!--end of body-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Confirm</button>
       </div>
     </div>
   </div>
