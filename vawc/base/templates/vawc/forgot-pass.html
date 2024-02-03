@@ -21,12 +21,15 @@
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Email address</label>
+                                <div id="barangay-passkeyFeedback" class="invalid-feedback">
+                                    Your Email is invalid. Please try again.
+                                </div>
                               </div>
-                            <p class="fs-6 fw-light opacity-75">If your email address exists in our database, and you haven't requested a password reset in the  last 30 minutes, you will recieve a password recovery link at you email address in a few minutes.</p>
+                            <p class="fs-6 fw-light opacity-75">If your email address exists in our database, and you haven't requested a password reset in the  last 5 minutes, you will recieve a password recovery link at you email address in a few minutes.</p>
                         </div>
                     </div><!--First row-->
                     <div class="col-12 col-md-12 col-sm-8 pt-3 pt-3">
-                        <a href="{% url 'send code' %}"><button class="btn btn-lg btn-primary w-100" type="button">Send Code</button></a>
+                        <a href="{% url 'check your email' %}"><button class="btn btn-lg btn-primary w-100" type="button">Reset Password</button></a>
                     </div>
                 </div>
             </div>

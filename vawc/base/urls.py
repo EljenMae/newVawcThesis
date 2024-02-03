@@ -35,7 +35,13 @@ urlpatterns = [
     path('login/', views.login, name="login"),
     
     path('login/pincode', views.loginPinCode, name="login pincode"),
-
+    
+    path('login/forgot-pass', views.forgotPass, name="forgot password"),
+    
+    path('login/check-email', views.checkEmail, name="check your email"),
+    
+    path('login/change-pass', views.changePass, name="change password"),
+    
     path('barangay/dashboard', views.barangay, name="barangay"),
     
     path('barangay/report', views.barreport, name="barangay report"),

@@ -58,6 +58,15 @@ def login(request):
 def loginPinCode(request):
     return render(request, 'vawc/pincode.html')
 
+def forgotPass(request):
+    return render(request, 'vawc/forgot-pass.html')
+
+def checkEmail(request):
+    return render(request, 'vawc/check-email.html')
+
+def changePass(request):
+    return render(request, 'vawc/change-pass.html')
+
 
 # Barangay side.
 def barangay(request):

@@ -1,0 +1,28 @@
+{% extends "main.html" %}
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5 pb-5">
+    <div class="card">
+        <div class="card-body">
+            <a href="{% url 'home' %}"><button type="button" class="btn-close d-flex ms-auto" aria-label="Close"></button></a>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-8 pt-5">
+                    <img src= "{% static '/img/check.png' %}" class="img-fluid" alt="image">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-8 pt-5">
+                    <a class="bi bi-arrow-left text-decoration-none pb-5" href="{% url 'login' %}" role="button"> Back</a>
+                    <h2 class="text-center pt-5 pb-3">Check your Email</h2>
+                    <p class="text-center">We've sent you a link to reset your password.</p>
+                        <div class="col-12 col-md-12 col-sm-8 pt-3 pt-3">
+                            <a href="{% url 'home' %}"><button class="btn btn-lg btn-primary w-100" type="button">Got it</button></a>
+                        </div><!--end of the button-->
+                </div><!--end of col-->
+            </div><!--end of row-->
+      </div><!--end of body card-->
+    </div><!--end of card-->
+</div><!--end of container-->
+{% endblock %}
+{% endblock content %}
