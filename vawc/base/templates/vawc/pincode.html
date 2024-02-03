@@ -1,0 +1,40 @@
+{% extends "main.html" %}
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5 pb-5">
+    <div class="card">
+        <div class="card-body">
+            <a href="{% url 'home' %}"><button type="button" class="btn-close d-flex ms-auto" aria-label="Close"></button></a>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-8 pt-5">
+                    <img src= "{% static '/img/pincode.png' %}" class="img-fluid" alt="image">
+                </div><!--end of image-->
+                <div class="col-lg-6 col-md-6 col-sm-8 pt-5">
+                    <h2 class="text-center pt-3 pb-3">OTP Verification</h2>
+                    <p class="text-center">Code has been send to a***e@gmail.com</p>
+                   
+                    <div class="otp-card-inputs">
+                        <input type="text" maxlength="1" autofocus>
+                        <input type="text" maxlength="1">
+                        <input type="text" maxlength="1">
+                        <input type="text" maxlength="1">
+                        <input type="text" maxlength="1">
+                    </div><!--div otp-bx-->
+                    <div class="pt-4 text-center">
+                        <p class="text-center">Didn't get the otp <a href="#">Resend</a></p>
+                    </div><!--hyperlink for resend in otp-->
+                    <div class="col-12 col-md-12 col-sm-8 pt-3 pt-2 pb-2">
+                        <a href="{% url 'barangay' %}"><button class="btn btn-lg btn-primary w-100" type="button">Verify OPT</button></a>
+                        </button>
+                    </div><!--button-->
+                </div><!--end of col-->
+            </div><!--end of row-->
+            </div><!--end of col-->
+      </div><!--end of card body-->
+    </div><!--end of card-->
+</div><!--end of container-->
+{% endblock %}
+{% endblock content %}

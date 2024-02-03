@@ -55,6 +55,10 @@ def behalfIssuance(request):
 def login(request):
     return render(request, 'vawc/login.html')
 
+def loginPinCode(request):
+    return render(request, 'vawc/pincode.html')
+
+
 # Barangay side.
 def barangay(request):
     return render(request, 'vawc/barangay/barangay-dashboard.html')

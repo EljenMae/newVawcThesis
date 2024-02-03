@@ -33,6 +33,8 @@ urlpatterns = [
     path('behalf-issuance/', views.behalfIssuance, name="behalf issuance"),
     
     path('login/', views.login, name="login"),
+    
+    path('login/pincode', views.loginPinCode, name="login pincode"),
 
     path('barangay/dashboard', views.barangay, name="barangay"),
     

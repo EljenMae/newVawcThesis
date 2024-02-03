@@ -16,18 +16,26 @@
                 <h2 class="text-center pt-3 pb-3">Log In</h2>
                     <div class="row pb-2">
                         <div class="col-lg-12 col-md-12 col-sm-8 pt-2"> <!--lastname-->
-                            <label for="victim-firstname" class="form-label">Email: </label>
-                            <input type="text" class="form-control" id="victim-firstname">
+                            <label for="barangay-email" class="form-label">Email: </label>
+                            <input type="text" class="form-control is-invalid" id="barangay-email" aria-describeby="barangay-emailFeedback">
+                            <div id="barangay-emailFeedback" class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                            <!--invalid feedback-->
                         </div>
                     </div><!--First row-->
                     <div class="row pb-2">
                         <div class="col-lg-12 col-md-12 col-sm-8 pt-2"> <!--lastname-->
-                            <label for="victim-firstname" class="form-label">Passkey: </label>
-                            <input type="text" class="form-control" id="victim-firstname">
+                            <label for="barangay-passkey" class="form-label">Passkey: </label>
+                            <input type="text" class="form-control is-invalid" id="barangay-passkey" aria-describeby="barangay-passkeyFeedback">
+                            <div id="barangay-passkeyFeedback" class="invalid-feedback">
+                                Your passkey is invalid. Please try again.
+                            </div>
+                            <!--invalid feedback-->
                         </div>
                     </div><!--third row-->
                     <div class="col-12 col-md-12 col-sm-8 pt-3 pt-2">
-                        <a href="{% url 'barangay' %}"><button class="btn btn-lg btn-primary w-100" type="button">Log In</button></a>
+                        <a href="{% url 'login pincode' %}"><button class="btn btn-lg btn-primary w-100" type="button">Log In</button></a>
                         </button>
                     </div>
                 </div>
