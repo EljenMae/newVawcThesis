@@ -6,8 +6,11 @@
     gap: 30px;
     justify-content: center;
     grid-template-columns: repeat(5, auto);
+ }
 
-
+ .otp-card-inputs input {
+   width: 60px;
+   height: 70px;
  }
 
  /*End of OPT Card*/
