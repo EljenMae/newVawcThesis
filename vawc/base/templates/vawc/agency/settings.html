@@ -1,0 +1,165 @@
+{% extends "agency/agency-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5 pb-3">
+    <h1 class="pt-5">Settings</h1>
+    <div class="pt-3">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Barangay</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Health Care</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Police</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <h2 class="pt-4 pb-3">Barangay</h2>
+                <div class="table-responsive">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                      <tr class="text-center">
+                        <th scope="col">Barangay Name</th>
+                        <th scope="col">Dashboard</th>
+                        <th scope="col">Cases</th>
+                        <th scope="col">Report</th>
+                        <th scope="col">Feedback</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                      <tr>
+                        <th scope="row">Arena Blanco</th>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ayala</th>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Baliwasan</th>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!--table responsive-->
+                <div class="pt-3">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-outline-primary me-md-2" type="button">Reset</button>
+                    <button class="btn btn-primary" type="button">Save</button>
+                  </div>
+                </div><!--button-->
+            </div><!--tabs-->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <h2 class="pt-4 pb-3">Health Care</h2>
+                <div class="table-responsive">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                      <tr class="text-center">
+                        <th scope="col">Health Care Name</th>
+                        <th scope="col">Dashboard</th>
+                        <th scope="col">Cases</th>
+                        <th scope="col">Report</th>
+                        <th scope="col">Feedback</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                      <tr>
+                        <th scope="row">Bethany Hospital</th>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Brent Hospital and Colleges, Inc</th>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Canuto MS Enerio Jr. Memorial Hospital</th>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!--table responsive-->
+                <div class="pt-3">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-outline-primary me-md-2" type="button">Reset</button>
+                        <button class="btn btn-primary" type="button">Save</button>
+                      </div>
+                    </div><!--button-->
+            </div><!--tabs-->
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                <h2 class="pt-4 pb-3">Police</h2>
+                <div class="table-responsive">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                      <tr class="text-center">
+                        <th scope="col">Police Stations</th>
+                        <th scope="col">Dashboard</th>
+                        <th scope="col">Cases</th>
+                        <th scope="col">Report</th>
+                        <th scope="col">Feedback</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                      <tr>
+                        <th scope="row">Zamboanga City Police Office (ZCPO)</th>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Police Station 1 (PS1) - Central Police Station </th>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Police Station 3 (PS3) - Labuan Police Station</th>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                        <td class="text-center"><input class="form-check-input" type="checkbox" value="" id="invalidCheck"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!--table responsive-->
+                <div class="pt-3">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-outline-primary me-md-2" type="button">Reset</button>
+                        <button class="btn btn-primary" type="button">Save</button>
+                      </div>
+                    </div><!--button-->
+            </div><!--for tabs-->
+          </div>
+    </div><!--for pt-5-->
+
+</div><!--end of container-->
+
+
+{% endblock %}
+{% endblock content %}

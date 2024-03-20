@@ -244,6 +244,8 @@ urlpatterns = [
     
     path('agency/agencies-profile', views.agencyProfile, name="agency profile"),
     
+    path('agency/agencies-settings', views.agencySettings, name="agency settings"),
+    
      path('barangay/case/download', views.barangayCaseDownload, name="barangay case download"),
     
 ]

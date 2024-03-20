@@ -442,6 +442,10 @@ def agencyPoliceDetails(request):
 def agencyProfile(request):
     return render(request, 'vawc/agency/profile.html')
 
+# settings
+def agencySettings(request):
+    return render(request, 'vawc/agency/settings.html')
+
 # profile
 def barangayCaseDownload(request):
     return render(request, 'vawc/barangay/barangay-case-download.html')
